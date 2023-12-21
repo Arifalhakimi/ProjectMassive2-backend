@@ -1,0 +1,1330 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #f6f8fd;
+  --secondary-color: #dc3545;
+  --color-text: #231942;
+  --navbar-color: #171e2b;
+  --navbar-color-text: #000000;
+}
+
+/* Navbar start */
+.navbar {
+  position: fixed;
+  padding: 15px 0 15px 0;
+  width: 100%;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  z-index: 9999;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  background-color: var(--navbar-color);
+}
+
+.navbar.color-active {
+  background-color: var(--navbar-color);
+  padding: 20px 0 20px 0;
+  border-bottom: 2px solid #dc354686;
+}
+
+.navbar .logo-navbar {
+  color: var(--primary-color);
+}
+
+.navbar .nav-link a {
+  padding: 5px 10px 5px 10px;
+  font-weight: 550;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.navbar .nav-link a:hover {
+  color: var(--secondary-color);
+
+}
+
+.navbar .nav-link .active {
+  transition: color 1s, border-bottom 0.3s;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.navbar .nav-link .active:hover {
+  color: var(--primary-color);
+}
+
+.icon-mitra {
+  margin-left: 630px;
+}
+
+.icon-mitra .icon-navbar-mitra {
+  color: var(--primary-color);
+  align-items: center;
+}
+
+.icon-mitra .icon-navbar-mitra i {
+  font-size: 22px;
+  margin-left: 25px;
+}
+
+.icon-mitra .icon-navbar-mitra p {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.navbar .dropdown{
+  background-color: var(--navbar-color);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+.navbar .dropdown i{
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+/* Navbar end */
+
+/* Home Page start */
+header {
+  position: relative;
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to bottom, #be181e 60%, #f6f8fd);
+  background: linear-gradient(to bottom, #be181e 99%, #f6f8fd);
+  color: #fff;
+  padding: 60px 0;
+  height: 550px;
+  /* Adjust the padding as needed */
+}
+
+header .container .header-box .col .text-container {
+  max-width: 500px;
+  /* Adjust the max-width as needed */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-light:hover {
+  color: #be181e;
+  background-color: #fff;
+}
+
+/* Add any additional styling as needed */
+
+
+.homepage .home-page-component {
+  background-color: var(--primary-color)
+}
+
+.homepage .header-box h1 {
+  font-size: 3.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  --animate-delay: 0.6s;
+}
+
+.homepage .header-box h1 span {
+  font-weight: 750;
+}
+
+.homepage .header-box p {
+  line-height: 2;
+  color: var(--primary-color);
+  font-weight: 500;
+  --animate-delay: 1s;
+}
+
+.homepage .header-box button {
+  --animate-delay: 1.6s;
+}
+
+.homepage .header-box img {
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .homepage .header-box {
+    padding-top: 8rem;
+  }
+
+  .homepage .header-box img {
+    width: 400px;
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .homepage .header-box h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .homepage .header-box h1 {
+    font-size: 2.4rem;
+  }
+
+  .homepage .header-box p {
+    font-size: 14px;
+  }
+
+  .homepage .header-box img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .homepage .header-box h1 {
+    font-size: 2rem;
+  }
+
+  .homepage .header-box p {
+    font-size: 10px;
+  }
+}
+
+/* jenis layanan start */
+.jenis-layanan-component {
+  background-color: var(--primary-color);
+  padding-top: 20px;
+}
+
+.jenis-layanan-component .row:nth-child(1) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.jenis-layanan-component .row:nth-child(1) h1 {
+  color: var(--color-text);
+}
+
+
+
+.jenis-layanan-component .row:nth-child(2) {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.jenis-layanan-component .row:nth-child(2) .col .card {
+  border-radius: 20px;
+}
+
+.jenis-layanan-component .row:nth-child(2) .col .card .card-body .card-title {
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.jenis-layanan-component .row:nth-child(2) .col .card .card-body .card-title i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.jenis-layanan-component .row:nth-child(2) .col .card .card-body .card-title p {
+  font-size: 30px;
+}
+
+.jenis-layanan-component .row:nth-child(2) .col .card .card-body .border-kendaraan .baris1 i {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: 12px;
+  width: 10px;
+  height: 10px;
+}
+
+.jenis-layanan-component .row:nth-child(2) .col .card .card-body .border-kendaraan .baris1 p {
+  font-size: 18px;
+  margin-top: 13px;
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+
+/* jenis layanan end */
+
+/* home page kelas */
+.homepage .service {
+  background-color: var(--primary-color);
+  padding-bottom: 20px;
+}
+
+.homepage .service .row:nth-child(1) {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.homepage .service .row:nth-child(1) h1,
+.homepage .service .row:nth-child(1) p {
+  color: var(--color-text);
+}
+
+.homepage .service .row:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding-inline: 10px;
+}
+
+.homepage .service .row:nth-child(2) img {
+  width: 100%;
+  height: 180px;
+}
+
+.homepage .service .row:nth-child(2) .col {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.homepage .service .row:nth-child(2) .col .alamatservice {
+  margin-left: 30px;
+}
+
+.homepage .service .row:nth-child(2) .col .alamatservice i {
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.homepage .service .row:nth-child(2) .col .alamatservice h5 {
+  font-size: 9px;
+  color: var(--color-text);
+  margin-top: 3px;
+}
+
+.homepage .service .row:nth-child(2) .col h6 {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 23px;
+  color: var(--color-text);
+}
+
+.homepage .service .row:nth-child(2) .start {
+  display: flex;
+  margin-left: 30px;
+}
+
+.homepage .service .row:nth-child(2) .start i {
+  color: gold;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.homepage .service .row:nth-child(2) .start p {
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.homepage .service .row:nth-child(2) h5 {
+  color: var(--color-text);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.homepage .service .row:nth-child(3) {
+  padding-top: 50px;
+}
+
+/* home page kelas */
+/* Home Page end */
+
+/* kelas start */
+
+/* kelas end */
+
+/* testimpnial start */
+.testimonial {
+  background-color: var(--primary-color);
+}
+
+.testimonial h1 {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.testimonial .swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  box-shadow: #c6ffdd 100px;
+}
+
+.testimonial .swiper-slide {
+  text-align: start;
+  font-size: 16px;
+  background: #fff;
+  padding: 10px;
+  height: 21rem;
+  border-radius: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial .swiper {
+    padding-inline: 10px;
+  }
+
+  .testimonial .swiper-slide .people {
+    justify-content: center;
+  }
+}
+
+.testimonial .swiper-slide:active {
+  cursor: grabbing;
+}
+
+.testimonial .swiper-slide .text {
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.testimonial .swiper-slide .desc {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.testimonial .swiper-slide .people {
+  display: flex;
+  width: 100%;
+  column-gap: 10px;
+  margin-left: 6px;
+}
+
+.testimonial .swiper-slide .people h5,
+.testimonial .swiper-slide .people p {
+  color: var(--color-text);
+}
+
+.testimonial .swiper-slide .people h5 {
+  font-weight: 600;
+}
+
+.testimonial .swiper-slide .people p {
+  opacity: 50%;
+}
+
+.testimonial .swiper-slide .people img {
+  width: 80px;
+  border-radius: 100%;
+}
+
+/* testimpnial end */
+
+/* kelas start */
+.service-page {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+.service-page .row:nth-child(1) {
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+.service-page .row:nth-child(1) h1 {
+  color: var(--color-text);
+  --animation-delay: 0.5s;
+  margin-left: 20%;
+}
+
+.service-page .row .search2-bengkel {
+  margin-right: 20%;
+}
+
+.service-page .row .search2-bengkel input {
+  width: 350px;
+}
+
+.service-page .row:nth-child(1) p {
+  color: var(--color-text);
+}
+
+.service-page .service .row:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding-inline: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.service-page .service .row:nth-child(2) img {
+  width: 100%;
+  height: 180px;
+}
+
+.service-page .service .row:nth-child(2) .col {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.service-page .service .row:nth-child(2) .col .addres {
+  margin-left: 30px;
+}
+
+.service-page .service .row:nth-child(2) .col .addres .jalan i {
+  color: var(--secondary-color);
+  margin-right: 10px;
+  margin-top: 3px;
+  font-size: 18px;
+}
+
+.service-page .service .row:nth-child(2) .col .addres .jalan p {
+  font-size: 11px;
+  color: var(--color-text);
+  margin-top: 4px;
+}
+
+.service-page .service .row:nth-child(2) .col .addres .open {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.service-page .service .row:nth-child(2) .col .addres .open i {
+  margin-top: 5px;
+  font-size: 8px;
+  margin-left: 3px;
+  margin-right: 30px;
+  color: green;
+}
+
+.service-page .service .row:nth-child(2) .col .title h5 {
+  margin-left: 30px;
+  font-weight: 750;
+  font-size: 25px;
+}
+
+.service-page .service .row:nth-child(2) .ket {
+  margin-left: 30px;
+}
+
+.service-page .service .row:nth-child(2) .ket .start {
+  margin-top: 10px;
+}
+
+.service-page .service .row:nth-child(2) .ket .start i {
+  color: gold;
+  margin-top: 1px;
+  margin-right: 4px;
+}
+
+.service-page .service .row:nth-child(2) .ket .start p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.service-page .service .row:nth-child(2) .ket .button-detail button {
+  margin-right: 30px;
+}
+
+.service-page .service .row:nth-child(2) h5 {
+  color: var(--color-text);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@keyframes drawLine {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.service-page .headingBengkel {
+  position: relative;
+  border-bottom: 1px solid var(--secondary-color);
+  overflow: hidden;
+  /* Mencegah garis terlihat sejak awal */
+}
+
+.service-page .headingBengkel::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+  animation: drawLine 3s ease forwards;
+  /* Menggunakan animasi dengan keyframes */
+}
+
+
+
+
+/* kelas end */
+
+/* tampilan halaman pilihan maslaah start */
+
+/* tampilan halaman pilihan maslaah end */
+
+/* about start */
+.about-component {
+  background-color: var(--primary-color);
+  padding-top: 20px;
+}
+
+.about-component:nth-child(1) h1 {
+  color: var(--color-text);
+}
+
+.about-component:nth-child(1) p {
+  color: var(--color-text);
+  text-align: start;
+  font-size: 18px;
+}
+
+.about-component .about-text {
+  margin-left: 30px;
+  margin-top: 75px;
+}
+
+.about-component .about-text span {
+  color: var(--secondary-color);
+}
+
+.about-component .image-about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-component .image-about img {
+  width: 350px;
+  height: 350px;
+}
+
+
+/* about end */
+
+/* mitra start */
+.carousel-mitra {
+  background-color: var(--primary-color);
+}
+
+.carousel-mitra img {
+  width: 100%;
+  height: 400px;
+  margin-top: 90px;
+  border-radius: 20px;
+  filter: brightness(40%);
+}
+
+.mitra-page .mitra {
+  padding-top: 80px;
+  background-color: var(--primary-color);
+}
+
+.mitra-page .mitra .manfaat-mitra {
+  color: var(--color-text);
+  padding-bottom: 50px;
+}
+
+.mitra-page .mitra .manfaat-mitra p {
+  font-size: 24px;
+}
+
+.mitra-page .mitra .manfaat-mitra span {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.mitra-page .mitra {
+  background-color: var(--primary-color);
+}
+
+.mitra-page .mitra h1 {
+  color: var(--color-text);
+}
+
+.mitra-page .mitra .swiper {
+  width: 70rem;
+  height: 15rem;
+  padding-bottom: 50px;
+}
+
+.mitra-page .mitra .swiper-slide {
+  text-align: start;
+  font-size: 18px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+@media screen and (max-width: 768px) {
+  .mitra-page .mitra .swiper {
+    padding-inline: 10px;
+  }
+
+  .mitra-page .mitra .swiper-slide .people {
+    justify-content: center;
+  }
+}
+
+.mitra-page .mitra .swiper-slide:active {
+  cursor: grabbing;
+}
+
+.mitra-page .mitra .swiper-slide {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.mitra-page .mitra .swiper-slide .title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.mitra-page .mitra .swiper-slide {
+  font-weight: 600;
+}
+
+/* mitra end */
+
+/* registrasi-component start */
+.registrasi-component {
+  background-color: var(--primary-color);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.registrasi-component .form-regis-bengkel .form-check-input {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid var(--navbar-color-text);
+}
+
+.registrasi-component .form-regis-bengkel .submitregismitra {
+  border-radius: 100px;
+}
+
+/* registrasi-component end */
+
+/* informasi layanan start */
+.layanan-page {
+  padding-top: 100px;
+  background-color: var(--primary-color);
+  color: var(--color-text);
+  padding-bottom: 100px;
+}
+
+.layanan-page .gambar-cadangan img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.layanan-page .content .content-text .header {
+  margin-bottom: 7px;
+}
+
+.layanan-page .content .content-text h5 {
+  margin-top: 5px;
+  color: var(--color-text);
+  font-size: 24px;
+}
+
+.layanan-page .content .content-text .start i {
+  color: gold;
+  margin-right: 7px;
+  margin-top: 2px;
+}
+
+.layanan-page .content .content-text .start p {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.layanan-page .content {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.layanan-page .body-infolayanan {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+/* informasi layanan end */
+
+/* mitra-page .mitra end */
+
+/* syarat dan ketentuan start */
+.Contact-page .Contact {
+  padding-top: 150px;
+  background-color: var(--primary-color);
+  padding-bottom: 30px;
+}
+
+.Contact-page .Contact h1 {
+  color: var(--color-text);
+}
+
+.Contact-page .Contact p {
+  line-height: 2;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.Contact-page .Contact img {
+  width: 500px;
+  height: 450px;
+}
+
+.Contact-page .Contact .form-contact {
+  margin-top: 50px;
+}
+
+/* syarat dan ketentuan end */
+
+/* faq start */
+.faq {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--primary-color);
+}
+
+.faq h2 {
+  color: var(--color-text);
+}
+
+.faq .accordion .accordion-button {
+  color: var(--color-text);
+  font-weight: bold;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.faq .accordion .accordion-body {
+  background-color: #ffffff;
+}
+
+/* faq end */
+
+/* modals start */
+.modal-container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 10000;
+  /* Sesuaikan dengan tinggi yang diinginkan */
+}
+
+.modal-container .icon-modals img {
+  width: 150px;
+  height: 150px;
+}
+
+/* modals end */
+/* footer start */
+.footer {
+  width: 100%;
+  background-color: var(--navbar-color);
+  z-index: 9998;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.footer h3,
+.footer p,
+.footer h5 {
+  color: var(--primary-color);
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) h3 {
+  color: var(--primary-color);
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) .desc {
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .no a,
+.footer .mail a {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  column-gap: 5px;
+}
+
+.footer .no a:hover,
+.footer .mail a:hover {
+  color: var(--secondary-color);
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) {
+  gap: 10px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a:hover {
+  color: var(--secondary-color);
+}
+
+.footer .subsribe {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer .subsribe input {
+  width: 200px;
+  height: 38px;
+  padding: 5px;
+}
+
+.footer .sosial {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-color);
+}
+
+.footer .sosial i {
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.footer .sosial i:hover {
+  color: var(--secondary-color);
+}
+
+/* footer end */
+
+/* dashboard start */
+
+/* sidebar start */
+/* Sidebar.css */
+.sidebar {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  background-color: var(--navbar-color);
+  align-items: center;
+  padding-top: 120px;
+  z-index: 9998;
+}
+
+
+
+.sidebar .gambar-profile-mitra img {
+  width: 100px;
+  height: 100px;
+  margin-left: 67px;
+  border-radius: 100px;
+}
+
+.sidebar .gambar-profile-mitra .text-profile {
+  color: #ffffff;
+}
+
+.sidebar .gambar-profile-mitra .text-profile p {
+  font-size: 10px;
+}
+
+.sidebar .sidebar-content-link {
+  width: 100%;
+  border-bottom: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+.sidebar .sidebar-content-link .sidebar-link {
+  align-items: center;
+  font-size: 14px;
+}
+
+.sidebar .sidebar-content-link .sidebar-link .sidebar-text {
+  color: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar .sidebar-content-link .sidebar-link .sidebar-text i {
+  margin-right: 15px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.sidebar .sidebar-content-link .sidebar-link .sidebar-text p {
+  text-decoration: none;
+  margin: 0;
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.sidebar .sidebar-logout {
+  color: var(--primary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar .sidebar-logout i {
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.sidebar .sidebar-logout p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
+
+/* sidebar end */
+
+/* dashboard mitra start */
+.Dashboard-mitra-content,
+.data-pesanan,
+.riwayat-pesanan,
+.jenis-layanan {
+  padding-bottom: 100px;
+}
+
+.Dashboard-mitra-content .content,
+.data-pesanan .content,
+.riwayat-pesanan .content,
+.jenis-layanan .content {
+  margin-top: 100px;
+  margin-left: 215px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.Dashboard-mitra-content .content-body,
+.Dashboard-mitra-content .form-daftar,
+.data-pesanan .content-body {
+  margin-left: 215px;
+}
+
+.Dashboard-mitra-content .content-body span {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.Dashboard-mitra-content .content-body img {
+  width: 300px;
+  height: 300px;
+}
+
+/* dashboard mitra end */
+/* Data pesanan start */
+.data-pesanan .content-body {
+  margin-left: 230px;
+}
+
+/* Data pesanan end */
+/* Jenis layanan start */
+.jenis-layanan .content button {
+  margin-top: 7px;
+}
+
+.jenis-layanan .content-body {
+  margin-left: 230px;
+}
+
+/* Jenis layanan end */
+.riwayat-pesanan .content-body {
+  margin-left: 230px;
+}
+
+.riwayat-pesanan .content .border img {
+  width: 100%;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.riwayat-pesanan .content .border i {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: #171e2b;
+}
+
+/* riwayat pesanan start */
+
+/* riwayat pesanan end */
+
+/* dashboard end */
+
+/* pemesanan-component start */
+.pemesanan-page {
+  background-image: url("../../assets/img/bgiamge.jpeg");
+}
+
+.pemesanan-page .pemesanan {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: var(--color-text);
+}
+
+.pemesanan-page .pemesanan form{
+  padding-top: 100px;
+
+}
+.pemesanan-page .pemesanan .form-pemsanan-input .gambar{
+  margin: 0;
+}
+.pemesanan-page .pemesanan .form-pemsanan-input .gambar img {
+  width: 400px;
+  height: 400px;
+}
+
+.pemesanan-page .pemesanan .form-pemsanan-input {
+  padding: 0rem 5rem 5rem 5rem;
+  background-color: #daccccc4;
+  border-radius: 40px;
+  border: var(--secondary-color) 1px solid;
+}
+
+.pemesanan-page .pemesanan .form-pemsanan-input h3 {
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-left: 3px;
+}
+
+.pemesanan-page .pemesanan .form-pemsanan-input .inputan-masalah-desc{
+  width: 100%;
+}
+
+/* pemesanan-component end */
+/* profile start */
+.profile-page {
+  padding-bottom: 40rem;
+  background-color: var(--primary-color);
+}
+
+.profile-page .bgimage {
+  background-image: url("../../assets/img/imageprofile.png");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.profile-page .imageuser img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin-top: 250px;
+}
+
+.profile-page .bgimage .isi-profile {
+  padding-top: 30px;
+}
+
+.profile-page .bgimage .isi-profile .button-profile button {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.profile-page .bgimage .isi-profile .log {
+  margin-left: 90px;
+  padding-top: 30px;
+}
+
+.profile-page .bgimage .isi-profile .log .logout-profile {
+  margin-top: 10px;
+  border-top: 1px solid var(--navbar-color);
+  border-bottom: 1px solid var(--navbar-color);
+  margin-right: 100px;
+  width: 400px;
+  margin-right: 100px;
+
+}
+
+.profile-page .bgimage .isi-profile .log .logout-profile i {
+  margin-top: 15px;
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.profile-page .bgimage .isi-profile .log .logout-profile p {
+  align-items: center;
+  margin-top: 12px;
+  font-size: 20px;
+  margin-right: 90px;
+
+}
+
+/* profile end */
+/* loginPage start */
+
+.login-page {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../assets/img/bglogin.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.login-page form {
+  width: 500px;
+  background-color: #ccdfd3c5;
+  margin-bottom: 70px;
+  border-radius: 30px;
+  margin-top: 25px;
+  border: 1px solid var(--secondary-color);
+}
+
+.login-page form img {
+  width: 250px;
+  height: 250px;
+  margin-left: 130px;
+}
+
+.login-page form button {
+  margin-left: 215px;
+  margin-bottom: 10px;
+}
+
+.login-page form .icon {
+  display: flex;
+  justify-content: center;
+  margin-right: 115px;
+}
+
+.login-page form .lupa-kata-sandi span {
+  color: var(--color-text);
+}
+
+.login-page form .lupa-kata-sandi span:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.login-page form .text-muted span {
+  color: var(--secondary-color);
+  margin-left: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-page form .text-muted span:hover {
+  font-weight: 900;
+}
+
+.login-page form .password i:hover {
+  cursor: pointer;
+}
+.login-page form .icon img{
+  width: 55px;
+  height: 55px;
+}
+
+/* loginPage end */
+/* register start */
+.register-page {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../assets/img/bglogin.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.register-page form {
+  width: 500px;
+  background-color: #ccdfd3c5;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  margin-top: 25px;
+  border: 1px solid var(--secondary-color);
+}
+
+.register-page form img {
+  width: 250px;
+  height: 250px;
+  margin-left: 150px;
+}
+
+.register-page form button {
+  margin-left: 215px;
+  margin-bottom: 10px;
+}
+
+.register-page form .icon {
+  margin-left: 237px;
+}
+
+.register-page form .icon i {
+  font-size: 35px;
+}
+
+.register-page form .text-muted span {
+  color: var(--secondary-color);
+  margin-left: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-page form .text-pendaftaran h3 {
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--navbar-color-text);
+}
+
+.register-page form .password i:hover {
+  cursor: pointer;
+}
+
+/* register end */
