@@ -1,0 +1,78 @@
+// Create a user
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Arif AL Hakimi Rifai",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+###
+POST  http://localhost:7730/users
+Content-Type: application/json
+
+{
+    "nama": "Arif AL Hakimi Rifai",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "role": "user"
+}
+
+###
+// get all users
+GET http://localhost:5000/users
+
+###
+// get single user
+GET http://localhost:5000/users/9e07c8b1-6152-4f01-8c8d-efdaf21a4cdd
+
+###
+// Update uses
+PATCH   http://localhost:5000/users/9e07c8b1-6152-4f01-8c8d-efdaf21a4cdd
+Content-Type: application/json
+
+{
+    "name": "Hakimi Rifai updated",
+    "email": "hakimi@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+###
+//delete user
+DELETE http://localhost:5000/users/9e07c8b1-6152-4f01-8c8d-efdaf21a4cdd
+
+###
+// login
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+// loginuser
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "hakimi@gmail.com",
+    "password": "123456"
+}
+
+###
+GET   http://localhost:5000/me
+
+###
+//Logout
+DELETE http://localhost:5000/logout
+
+###
+//get all bengkels
+GET http://localhost:5000/bengkels
+
+
